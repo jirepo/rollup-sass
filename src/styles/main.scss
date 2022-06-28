@@ -1,0 +1,32 @@
+
+@charset "utf-8";
+@import "~reset-css";
+@import "normalize.css";
+
+// 컴파일 되지 않는 주석
+/* 컴파일 되는 주석 */ 
+
+$color: orange;
+div {
+  @if $color == strawberry {
+    color: #FE2E2E;
+  } @else if $color == orange {
+    color: #FE9A2E;
+  } @else if $color == banana {
+    color: #FFFF00;
+  } @else {
+    color: #2A1B0A;
+  }
+}
+
+
+.section {
+    width: 100%;
+    background-color:#FFFF00;
+    .list {
+      padding: 20px;
+      li {
+        float: left;
+      }
+    }
+  }
